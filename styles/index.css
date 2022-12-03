@@ -345,6 +345,7 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
 
 .main_page_article2 {
   display: none;
+  
 }
 
 .main_page_text_group {
@@ -515,7 +516,8 @@ white-space: nowrap;
  } 
 
  .hidearticle2 {
-  display: flex;
+  display: inline;
+  align-items: baseline;
 }
 
 #main_page_highlight {

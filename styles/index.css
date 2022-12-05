@@ -22,14 +22,18 @@ font-style: normal;
 
  @font-face {
   font-family:'TTLakes light';
-  src: url('../font/TTLakes-Light.ttf') format('truetype');
+  src: url('../font/TTLakes-Light.ttf') format('truetype'),
+  url('../font/TTLakes-Light.eot') format('eot'),
+  url('../font/TTLakes-Light.ttf') format('woff');
   font-weight: normal;
  font-style: light;
  }
 
  @font-face {
   font-family:'TTLakes demi';
-  src: url('../font/TTLakes-DemiBold.ttf') format('truetype');
+  src: url('../font/TTLakes-DemiBold.ttf') format('truetype'),
+  url('../font/TTLakes-DemiBold.eot') format('eot'),
+  url('../font/TTLakes-DemiBold.woff') format('woff');
   font-weight: normal;
   font-style: bold;
  }

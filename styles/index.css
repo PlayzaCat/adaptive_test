@@ -13,7 +13,7 @@ font-style: normal;
 
 @font-face {
   font-family:'TTLakes bold';
-  src: url('../font/TTlakes-Bold.ttf') format('truetype'),
+  src: url('../font/TTLakes-Bold.ttf') format('truetype'),
   url('../font/TTLakes-Bold.eot') format('eot'),
   url('../font/TTLakes-Bold.woff') format('woff');
   font-weight: normal;
@@ -22,7 +22,7 @@ font-style: normal;
 
  @font-face {
   font-family:'TTLakes light';
-  src: url('../font/TTlakes-Light.ttf') format('truetype');
+  src: url('../font/TTLakes-Light.ttf') format('truetype');
   font-weight: normal;
  font-style: light;
  }

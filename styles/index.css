@@ -411,7 +411,7 @@ white-space: nowrap;
   display: flex;
   border-radius: 10px;
   padding-left: 25px;
-  
+  max-width: 700px;
   padding: 0;
   border: 0;
 
@@ -422,12 +422,8 @@ white-space: nowrap;
   width: 100%;
   align-self: center;
   max-width: 700px;
-  
+
 }
-
-
-
-
 
  /* Экран 1*/
 

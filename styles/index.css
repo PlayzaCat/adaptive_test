@@ -422,7 +422,7 @@ white-space: nowrap;
   
   width: 100%;
   align-self: center;
-
+ max-width: 700px;
 }
 
 

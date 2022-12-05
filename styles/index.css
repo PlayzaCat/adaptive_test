@@ -40,12 +40,14 @@ font-style: normal;
 
 html {
   box-sizing: border-box;
+  
 }
 
 body {
   font-family: 'TTLakes', 'TTLakes bold', 'TTLakes light', 'TTLakes demi', sans-serif;
   min-width: 320px; 
   overflow-x: hidden;
+
   line-height: 18px;
   background-color: #F8F8F8;
   color: #1B1C21;
@@ -64,7 +66,7 @@ body {
 
 .header { 
   background-color: #FFFFFF; 
-  width: 100vw ;
+  width: 100% ;
    &__inner{   /* почему не работает?" */
     display: flex;
     justify-content: space-between;
@@ -183,16 +185,28 @@ display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 88px; 
+
+  
 }
 
 .slide_menu {
   display: flex;
   margin-left: 16px;
   flex-grow: 1;
-  overflow: visible;
   margin-top: 28px;
 
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(189, 20, 20);
+
+
 }
+
+.slide_menu::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
 
 .slide_menu ul {
   display: flex;
@@ -203,6 +217,8 @@ display: flex;
   padding: 0px;
   list-style: none;
   flex-wrap: nowrap;
+  
+
   
   }
 
@@ -234,7 +250,6 @@ display: flex;
 .hide_button3 {
   display: none;
   }
-
 
 
 
@@ -322,12 +337,15 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
 
  .main_page_article {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 320px;  
+  flex-direction: column; 
+  align-content: stretch;
+  padding: 0;
+  border: 0;
   margin-top: 30px;
- 
+  height: auto;
+  width: 100%;
+  flex-grow: 1;
+
  }
 
  .main_page_article a {
@@ -339,18 +357,22 @@ background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 
   text-align: left;
   color: #1B1C21;
   letter-spacing: 0.2px;
- 
+
+
   
 }
 
 .main_page_article2 {
-  display: none;
-  
+  display: none;  
 }
 
 .main_page_text_group {
   margin-left: 16px;
   flex-direction: column;
+  max-width: 420px;
+  height: auto;
+  
+
 }
 
 .main_page_readmore {
@@ -381,14 +403,27 @@ font-size: 17px;
 line-height: 24px;
 text-align: left;
 white-space: nowrap;
+
   
 }
 
 .main_page_img {
   display: flex;
   border-radius: 10px;
+  padding-left: 25px;
+  
+  padding: 0;
+  border: 0;
+
+  flex-grow: 2;
 }
 
+.main_page_img img {
+  
+  width: 100%;
+  align-self: center;
+
+}
 
 
 
@@ -427,17 +462,17 @@ white-space: nowrap;
   }
 
   .main_page_article {
-    
-    width: 769px;
     margin-left: 24px;
     display: flex;
     flex-direction: row;  
+    
  
   }
 
   .main_page_article2 {
     display: flex;
     margin-top: 10px;
+  
   }
   
 
@@ -446,19 +481,15 @@ white-space: nowrap;
   }
 
   .main_page_img {
-    float: right;
     margin-left: 24px;
+    max-width: 100%;
   }
 
   .main_page_text_group {
-    display: flex;
-    width: 288px;
+    display: flex;  
     margin: 10px;
   }
 
-  .hidearticle2 {
-    display: none;
-  }
 
   .main_page_img img {
     border-radius: 10px;
@@ -496,38 +527,20 @@ white-space: nowrap;
 
   .body {
     overflow-x:hidden;
-    min-width: 416px; 
-    width: 1120px;
+    
+    
   }
 
  .header {
       display: none;
   }
 
-  .main_page_article {
-    display: flex;
-    flex-direction: row;
-    width: 1120px;
-    justify-content: flex-start;
-  }
-
-  .main_page_text_group {
-    width: 490px;
- } 
-
- .hidearticle2 {
-  display: inline;
-  align-items: baseline;
-}
 
 #main_page_highlight {
   margin-right: 30px;
 }
 
-.main_page_img {
-  height: 307px;
-  width: 531px
-}
+
 
 #mainpage_fade {
   display: none;
